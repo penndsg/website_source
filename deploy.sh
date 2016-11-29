@@ -4,6 +4,8 @@
 #
 # Copyright (c) 2016 Ben Lindsay <benjlindsay@gmail.com>
 
+jekyll build
+
 cd _site
 
 if [ ! -d .git ]; then
