@@ -1,0 +1,34 @@
+{% for project in site.categories.projects %}
+  {% if project.current == include.current %}
+    {% cycle 'add rows': '<div class="row">', nil, nil %}
+<div class="col-sm-4 text-center">
+  <h3><a class="off" href="{{ project.url }}">{{ project.title }}</a></h3>
+    {% unless project.current %}
+  <a href="{{ project.url }}">
+    <img class="center-block" src="{{ project.image }}">
+  </a>
+    {% endunless %}
+  <div class="smallhead text-center">
+    {% for name in project.contributors %}
+      {% assign linked = false %}
+      {% for member in site.categories.members %}
+        {% if name == member.title %}
+          {% capture mem_url %}{{ member.url }}{% endcapture %}
+          {% assign linked = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% capture name_fmt %}{% if forloop.first %}<b>{{ name }}</b>{% else %}{{ name }}{% endif %}{% endcapture %}
+      {% if linked %}
+    <a class="off" href="{{ mem_url }}">{{ name_fmt }}</a>{% unless forloop.last %}, {% endunless %}
+      {% else %}
+        {{ name_fmt }}{% unless forloop.last %}, {% endunless %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="spacer"></div>
+</div>
+    {% cycle 'close rows': nil, nil, '</div>' %}
+  {% endif %}
+{% endfor %}
+{% cycle 'close rows': nil, '</div>', '</div>' %}
