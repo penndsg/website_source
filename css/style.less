@@ -9,6 +9,7 @@
 @content-background-color: #ffffff;
 @global-max-width: 950px;
 @pi-img-max-size: 200px;
+@nav-line-height: 30px;
 
 @import "/css/bootstrap/bootstrap.less";
 @navbar-height: 40px;
@@ -151,10 +152,14 @@ img.offset {
 
 .navbar-brand {
     font-size: 24px;
+    height: auto;
 }
 
 .logo {
-    height: 50px;
+    height: @nav-line-height;
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #header {
@@ -162,13 +167,44 @@ img.offset {
     color: #ffffff;
     a {
         color: inherit;
+        line-height: @nav-line-height;
     }
     a:hover, .active {
         background: rgba(255,255,255,0.3);
     }
 }
 
-#header.home-bkg, #header.events-bkg, #header.members-bkg, #header.projects-bkg {
+#header.home-bkg {
+    background: linear-gradient( @image-darkener, @image-darkener),
+                url('/images/upenn-philly-skyline.jpg');
+    background-position: center;
+}
+
+#header.events-bkg {
+    background: linear-gradient( @image-darkener, @image-darkener),
+                url('/images/upenn-philly-skyline.jpg');
+    background-position: center;
+}
+
+#header.projects-bkg {
+    background: linear-gradient( @image-darkener, @image-darkener),
+                url('/images/upenn-philly-skyline.jpg');
+    background-position: center;
+}
+
+#header.members-bkg {
+    background: linear-gradient( @image-darkener, @image-darkener),
+                url('/images/upenn-philly-skyline.jpg');
+    background-position: center;
+}
+
+#header.join-bkg {
+    background: linear-gradient( @image-darkener, @image-darkener),
+                url('/images/upenn-philly-skyline.jpg');
+    background-position: center;
+}
+
+#header.resources-bkg {
     background: linear-gradient( @image-darkener, @image-darkener),
                 url('/images/upenn-philly-skyline.jpg');
     background-position: center;

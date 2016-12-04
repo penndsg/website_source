@@ -1,5 +1,6 @@
 ---
 layout: post
+big_header: true
 title: Join
 ---
 

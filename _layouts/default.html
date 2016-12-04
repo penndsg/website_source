@@ -49,12 +49,16 @@
 
 {% if page.title == "Penn Data Science Group" %}
   <div id="header" class="home-bkg">
-{% elsif page.title == "Members" %}
-  <div id="header" class="members-bkg">
 {% elsif page.title == "Events" %}
   <div id="header" class="events-bkg">
 {% elsif page.title == "Projects" %}
   <div id="header" class="projects-bkg">
+{% elsif page.title == "Resources" %}
+  <div id="header" class="resources-bkg">
+{% elsif page.title == "Members" %}
+  <div id="header" class="members-bkg">
+{% elsif page.title == "Join" %}
+  <div id="header" class="join-bkg">
 {% else %}
   <div id="header">
 {% endif %}
@@ -67,8 +71,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img class="logo navbar-brand" src="/images/PDSG_logo.svg"></img>
-          <a class="navbar-brand" href="/">PDSG</a>
+          <a class="navbar-brand" href="/">
+            <img class="logo navbar-brand" src="/images/PDSG_logo.svg"></img>
+            PDSG
+          </a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-element">
           <ul class="nav navbar-nav navbar-right">
@@ -86,13 +92,13 @@
             {% endif %}
               <a href="/projects/">Projects</a>
             </li>
-            {% if page.categories.first == 'resources' %}
-            <li class="active">
-            {% else %}
-            <li>
-            {% endif %}
-              <a href="/resources/">Resources</a>
-            </li>
+            <!-- {% if page.categories.first == 'resources' %} -->
+            <!-- <li class="active"> -->
+            <!-- {% else %} -->
+            <!-- <li> -->
+            <!-- {% endif %} -->
+            <!--   <a href="/resources/">Resources</a> -->
+            <!-- </li> -->
             {% if page.categories.first == 'members' %}
             <li class="active">
             {% else %}
