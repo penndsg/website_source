@@ -14,8 +14,9 @@ if [ ! -d .git ]; then
 fi
 
 # update _site repo to latest commit
-git reset --hard
-git pull
+# based on http://stackoverflow.com/a/8888015/2680824
+git fetch --all
+git reset --hard origin/master
 # regenerate site content
 jekyll build
 # commmit changes and push to remote
