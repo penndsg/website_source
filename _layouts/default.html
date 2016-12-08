@@ -47,22 +47,8 @@
 
 <body>
 
-{% if page.title == "Penn Data Science Group" %}
-  <div id="header" class="home-bkg">
-{% elsif page.title == "Events" %}
-  <div id="header" class="events-bkg">
-{% elsif page.title == "Projects" %}
-  <div id="header" class="projects-bkg">
-{% elsif page.title == "Resources" %}
-  <div id="header" class="resources-bkg">
-{% elsif page.title == "Members" %}
-  <div id="header" class="members-bkg">
-{% elsif page.title == "Join" %}
-  <div id="header" class="join-bkg">
-{% else %}
   <div id="header">
-{% endif %}
-    <nav class="navbar" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
@@ -117,11 +103,12 @@
         </div>
       </div>
     </nav>
-    {% if page.big_header %}
-    <div id="header-title" class="text-center">
-      {{ page.title }}
-    </div>
-    {% endif %}
+  </div>
+
+  <div class="bigspacer"></div>
+
+  <div class="container text-center">
+    <h1>{{ page.title }}</h1>
   </div>
 
   <div id="content-wrapper">
