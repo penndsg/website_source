@@ -6,6 +6,14 @@ categories:
 ---
 
 <div class="container">
+
+  <div class="bigspacer"></div>
+  <div class="row text-center">
+    <h1>Board Members</h1>
+    <hr/>
+  </div>
+  <div class="bigspacer"></div>
+
 {% assign counter = 1 %}
 {% assign loopindex = -1 %}
 {% for member in site.categories.members reversed %}
@@ -14,12 +22,14 @@ categories:
     {% if loopindex == 1 %}
   <div class="row">
     {% endif %}
-    <div class="col-sm-4 text-center">
+    <div class="col-sm-4 text-center smallhead">
       <a href="{{ member.url }}">
         <img class="member-img" src="{{ member.image }}">
       </a>
       <div class="spacer"></div>
-      <p>{{ member.title }}</p>
+      <a href="{{ member.url }}" class="off">
+        <p>{{ member.title }}</p>
+      </a>
       <p>{{ member.position }} / {{ member.degree }}</p>
     </div>
     {% if loopindex == 0 %}
@@ -34,33 +44,11 @@ categories:
 
   <div class="bigspacer"></div>
 
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Postdoctoral Researchers</h1>
-    </div>
+  <div class="bigspacer"></div>
+  <div class="row text-center">
+    <h1>Group Members</h1>
+    <hr/>
   </div>
+  <div class="bigspacer"></div>
 
-  <hr>
-
-  {% include member_loop.html member_role="Postdoctoral Researcher" alumni=false %}
-
-  <div class="row">
-    <div class="col-md-12">
-      <h1>PhD Students</h1>
-    </div>
-  </div>
-
-  <hr>
-
-  {% include member_loop.html member_role="PhD Student" alumni=false %}
-
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Alumni</h1>
-    </div>
-  </div>
-
-  <hr>
-
-  {% include member_loop.html alumni=true%}
 </div>

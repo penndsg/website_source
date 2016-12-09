@@ -4,9 +4,11 @@
 <div class="col-sm-4 text-center">
   <h3><a class="off" href="{{ project.url }}">{{ project.title }}</a></h3>
     {% unless project.current %}
+  <div class="smallspacer"></div>
   <a href="{{ project.url }}">
     <img class="center-block" src="{{ project.image }}">
   </a>
+  <div class="smallspacer"></div>
     {% endunless %}
   <div class="smallhead text-center">
     {% for name in project.contributors %}
@@ -26,7 +28,7 @@
       {% endif %}
     {% endfor %}
   </div>
-  <div class="spacer"></div>
+  <div class="bigspacer"></div>
 </div>
     {% cycle 'close rows': nil, nil, '</div>' %}
   {% endif %}
