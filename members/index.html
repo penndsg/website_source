@@ -26,7 +26,7 @@ categories:
       </a>
       <div class="spacer"></div>
       <a href="{{ member.url }}" class="off">
-        <p>{{ member.title }}</p>
+        <b>{{ member.title }}</b>
       </a>
       <p>{{ member.position }} / {{ member.degree }}</p>
     </div>
@@ -46,5 +46,29 @@ categories:
     <h1>Group Members</h1>
     <hr/>
   </div>
+
+{% assign counter = 1 %}
+{% assign loopindex = -1 %}
+{% for member in site.categories.members reversed %}
+  {% unless member.board %}
+    {% assign loopindex = counter | modulo: 4 %}
+    {% if loopindex == 1 %}
+  <div class="row">
+    {% endif %}
+    <div class="col-sm-3 text-center smallhead">
+      <a href="{{ member.url }}" class="off">
+        <b>{{ member.title }}</b>
+      </a>
+      <p>{{ member.degree }}</p>
+    </div>
+    {% if loopindex == 0 %}
+  </div>
+    {% endif %}
+    {% assign counter = counter | plus: 1 %}
+  {% endunless %}
+{% endfor %}
+{% if loopindex != 0 %}
+</div>
+{% endif %}
 
 </div>

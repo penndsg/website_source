@@ -1,6 +1,6 @@
 ---
 layout: member
-title: Hyun Joo Hwang
+title: Hyun (Jennifer) Hwang
 position: Co-President
 board: true
 degree: PhD CBE 2016

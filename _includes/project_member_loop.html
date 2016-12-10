@@ -1,0 +1,52 @@
+{% assign counter = 1 %}
+{% assign loopindex = -1 %}
+{% for contributor in include.contributors %}
+  {% assign loopindex = counter | modulo: 2 %}
+  {% assign image = "/images/members/default.png" %}
+  {% assign linked = false %}
+  {% for member in site.categories.members %}
+    {% if member.title == contributor %}
+      {% capture image %}{{ member.image }}{% endcapture %}
+      {% capture link %}{{ member.url }}{% endcapture %}
+      {% assign linked = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% if loopindex == 1 %}
+<div class="row">
+  {% endif %}
+  <div class="col-sm-6">
+    <div class="media">
+  {% if linked %}
+      <a class="off" href="{{ link }}">
+        <img class="media-object pull-left" width=100 src="{{ image }}">
+      </a>
+  {% else %}
+      <img class="media-object pull-left" width=100 src="{{ image }}">
+  {% endif %}
+      <div class="media-body">
+        <div class="smallhead">
+  {% if linked %}
+    {% capture linked_member %}<a class="off" href="{{ link }}">{{ contributor }}</a>{% endcapture %}
+  {% else %}
+    {% capture linked_member %}{{ contributor }}{% endcapture %}
+  {% endif %}
+  {% if forloop.first %}
+          <b>{{ linked_member }}</b>, Team Leader
+  {% else %}
+          {{ linked_member }}
+  {% endif %}
+        </div> <!-- smallhead -->
+      </div> <!-- media-body -->
+    </div> <!-- media -->
+    <div class="spacer"></div>
+  </div> <!-- col-sm-6 -->
+  {% if loopindex == 0 %}
+</div>
+  {% endif %}
+  {% assign counter = counter | plus: 1 %}
+{% endfor %}
+
+{% if loopindex != 0 %}
+</div>
+{% endif %}

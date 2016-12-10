@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="container blog-post">
+  <div class="text-center">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <hr/>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      {% if page.image %}
+      {% if page.link %}
+      <a href="{{ page.link }}">
+        <img class="offset" src="{{ page.image }}">
+      </a>
+      {% else %}
+      <img class="offset" src="{{ page.image }}">
+      {% endif %}
+      {% endif %}
+      {% include project_member_loop.html contributors=page.contributors %}
+      <div class="bigspacer"></div>
+      <div class="post">
+        {{ content }}
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+  <div class="bigspacer"></div>
+  <div class="spacer"></div>
+
+</div>

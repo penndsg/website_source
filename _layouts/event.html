@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="text-center">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <hr/>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      {% if page.image %}
+      <div class="row">
+        <div class="col-sm-5">
+          {% if page.link %}
+          <a href="{{ page.link }}">
+            <img width=100% src="{{ page.image }}">
+          </a>
+          {% else %}
+          <img width=100% src="{{ page.image }}">
+          {% endif %}
+        </div>
+        <div class="col-sm-7">
+          <h3><i>{{ page.date | date: "%A, %-m/%-d/%Y" }}, {{ page.time }}</i></h3>
+          <h3><i>{{ page.location }}</i></h3>
+          <!-- <div class="smallhead"> -->
+          <h4>{{ page.description }}</h4>
+          <!-- </div> -->
+        </div>
+      </div>
+      {% endif %}
+      <div class="bigspacer"></div>
+      <div class="post">
+        {{ content }}
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+  <div class="bigspacer"></div>
+  <div class="spacer"></div>
+
+</div>

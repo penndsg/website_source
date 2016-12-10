@@ -14,7 +14,8 @@
 @import "/css/bootstrap/bootstrap.less";
 @navbar-height: 40px;
 @navbar-margin-bottom: 0px;
-@line-height-base: 1.6;
+@line-height-base: 1.2;
+@font-size-base: 14px;
 @content-padding: 20px;
 @nav-pills-active-link-hover-bg: @navbar-default-bg;
 @nav-pills-active-link-hover-color: @gray;
@@ -144,6 +145,10 @@ img.offset {
     max-height: 100%;
 }
 
+.media .pull-left {
+    padding-right: 20px;
+}
+
 // Header and Footer Stuff //
 
 .navbar {
@@ -177,6 +182,14 @@ img.offset {
 
 #cbe-text {
     padding: 5px;
+}
+
+#footer i {
+    color: #ffffff;
+}
+
+#footer i:hover {
+    color: #999999;
 }
 
 #pennimg {
@@ -218,6 +231,17 @@ img.offset {
 .member-img {
     width: 100%;
     // max-width: @pi-img-max-size;
+}
+
+// Join Page Stuff //
+
+#join-form-container {
+    height: 700px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
 }
 
 // Some other stuff that might come in handy if we use these features //

@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: project
 title: Sample finished project
 current: false
 contributors:
+ - Hyun (Jennifer) Hwang
  - Ben Lindsay
- - Hyun Joo Hwang
 image: /images/projects/us-beer-church.png
 ---
 
