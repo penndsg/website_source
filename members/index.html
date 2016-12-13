@@ -71,4 +71,40 @@ categories:
 </div>
 {% endif %}
 
+
+  <div class="bigspacer"></div>
+
+  <div class="text-center">
+    <h1>Founders</h1>
+    <hr/>
+  </div>
+
+{% assign counter = 1 %}
+{% assign loopindex = -1 %}
+{% for member in site.categories.members reversed %}
+  {% if member.position == 'Co-President' %}
+    {% assign loopindex = counter | modulo: 3 %}
+    {% if loopindex == 1 %}
+  <div class="row">
+    {% endif %}
+    <div class="col-sm-4 text-center smallhead">
+      <a href="{{ member.url }}">
+        <img class="member-img" src="{{ member.image }}">
+      </a>
+      <div class="spacer"></div>
+      <a href="{{ member.url }}" class="off">
+        <b>{{ member.title }}</b>
+      </a>
+      <p>{{ member.position }} / {{ member.degree }}</p>
+    </div>
+    {% if loopindex == 0 %}
+  </div>
+    {% endif %}
+    {% assign counter = counter | plus: 1 %}
+  {% endif %}
+{% endfor %}
+{% if loopindex != 0 %}
+</div>
+{% endif %}
+
 </div>
