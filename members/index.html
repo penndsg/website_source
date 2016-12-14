@@ -36,7 +36,7 @@ categories:
     {% assign counter = counter | plus: 1 %}
   {% endif %}
 {% endfor %}
-{% if loopindex != 0 %}
+{% if loopindex > 0 %}
 </div>
 {% endif %}
 
@@ -67,7 +67,7 @@ categories:
     {% assign counter = counter | plus: 1 %}
   {% endunless %}
 {% endfor %}
-{% if loopindex != 0 %}
+{% if loopindex > 0 %}
 </div>
 {% endif %}
 
@@ -103,7 +103,7 @@ categories:
     {% assign counter = counter | plus: 1 %}
   {% endif %}
 {% endfor %}
-{% if loopindex != 0 %}
+{% if loopindex > 0 %}
 </div>
 {% endif %}
 
