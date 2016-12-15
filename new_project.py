@@ -39,4 +39,4 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         new_member(sys.argv[1])
     else:
-        print("No name given. Usage: {} \"Your Name\"".format(sys.argv[0]))
+        print("No title given. Usage: {} \"Project Title\"".format(sys.argv[0]))
