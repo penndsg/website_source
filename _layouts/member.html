@@ -9,6 +9,8 @@ layout: default
       <div class="media">
         {% if member.image %}
         <img class="pull-left pad-right media-object" width=170 src="{{ member.image }}">
+        {% else %}
+        <img class="pull-left pad-right media-object" width=170 src="/images/members/default.png">
         {% endif %}
         <div class="media-body">
           <h1>{{ member.title }}{% if member.suffix %}, {{ member.suffix }}{% endif %}</h1>

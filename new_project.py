@@ -14,10 +14,10 @@ contributors:
  - Team Leader Name
  - Team Member 2
  - Team Member 3
-image:
+# image: /images/projects/{slug}.png
 ---
 
-*Project description here*
+Project description here. You can add links like [this](https://www.google.com/search?q=this).
 """
 
 
@@ -26,7 +26,7 @@ def new_member(title):
     slug = title.lower().strip().replace(' ', '-')
     f_create = "projects/_posts/{}-{:0>2}-{:0>2}-{}.md".format(
         today.year, today.month, today.day, slug)
-    t = TEMPLATE.strip().format(title=title)
+    t = TEMPLATE.strip().format(title=title, slug=slug)
     with open(f_create, 'w') as w:
         w.write(t)
         w.write('\n')
