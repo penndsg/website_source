@@ -12,16 +12,4 @@ linkedin: benjlindsay
 image: /images/members/ben-lindsay.jpg
 ---
 
-I am a PhD student in the Chemical and Biomolecular Engineering department,
-and I'm am also coadvised by [Russ Composto](http://www.seas.upenn.edu/~polymer/)
-in the Materials Science and Engineering department.
-I use polymer field theory simulations to probe interactions
-between nanoparticles and polymer matrices
-to complement experimental work in the Composto lab.
-
-I received my bachelor's degree in Chemical Engineering
-from [Brigham Young University](https://chemicalengineering.byu.edu/).
-I developed an interest in molecular modeling
-as a research assistant for [Thomas Knotts](http://knotts.byu.edu/),
-where I used coarse-grain molecular dynamics simulations
-to study interactions between free DNA strands and DNA strands bound to a surface.
+I am a PhD student in the [Riggleman Computational Soft Matter Lab](http://rrgroup.seas.upenn.edu/). During the course of my research, I developed a love of learning new tools and techniques for data analysis and visualization. I started this group with [Jennifer Hwang](/members/jennifer-hwang/) to make it easier for others like us to learn from and teach each other industrially relevant data science skills.
