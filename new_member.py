@@ -9,9 +9,9 @@ from datetime import datetime
 TEMPLATE = """---
 layout: member
 title: "{name}"
-degree: "[Degree] [Program] [Grad Year]"
-# cv: /pdfs/members/{slug}-cv.pdf
-# resume: /pdfs/members/{slug}-resume.pdf
+degree: "{deg_string}"
+# cv: /pdfs/members/{name_slug}-cv.pdf
+# resume: /pdfs/members/{name_slug}-resume.pdf
 # twitter: your_twitter_handle
 # github: your_github_handle
 # bitbucket: your_bitbucket_handle
@@ -19,26 +19,28 @@ degree: "[Degree] [Program] [Grad Year]"
 # linkedin: your_linkedin_id (the part that goes after linkedin.com/in/)
 # researchgate: your_researchgate_id
 # website: yourwebsite.com
-# email: name at example.edu
+# email: {email}
 # phone: "(123) 456-7890"
-# image: /images/members/{slug}.jpg
+# image: /images/members/{name_slug}.jpg
 ---
-
-Tell us about yourself here. You can add links like [this](https://www.google.com/search?q=this).
 """
 
 
-def new_member(name):
-    today = datetime.today()
-    slug = name.lower().strip().replace(' ', '-')
-    f_create = "members/_posts/{}-{:0>2}-{:0>2}-{}.md".format(
-        today.year, today.month, today.day, slug)
-    t = TEMPLATE.strip().format(name=name, slug=slug)
+def new_member(name, deg_string='', date_slug=None, email=None):
+    if date_slug is None:
+        today = datetime.today()
+        date_slug = '{}-{:0>2}-{:0>2}'.format(today.year, today.month, today.day)
+    if email is None:
+        email = 'name at example.com'
+    name_slug = name.lower().strip().replace(' ', '-')
+    f_create = "members/_posts/{}-{}.md".format(date_slug, name_slug)
+    t = TEMPLATE.strip().format(name=name, deg_string=deg_string,
+                                name_slug=name_slug, email=email)
     with open(f_create, 'w') as w:
         w.write(t)
         w.write('\n')
     print("File created -> " + f_create)
-    print("Edit this file and add square profile picture at images/members/{}.jpg".format(slug))
+    print("Edit this file and add square profile picture at images/members/{}.jpg".format(name_slug))
 
 
 if __name__ == '__main__':
