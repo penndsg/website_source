@@ -1,6 +1,6 @@
 name: Penn Data Science Group
 description: Official website for the Penn Data Science Group at UPenn
-url: http://penndsg.github.io
+url: http://penndsg.com
 
 markdown: kramdown
 permalink: /:categories/:title/
@@ -9,6 +9,8 @@ future: true
 exclude:
   - "Gemfile"
   - "Gemfile.lock"
-  - "deploy.sh"
-  - "new_member.py"
-  - "new_project.py"
+  - "*.sh"
+  - "*.py"
+  - "*.pyc"
+  - "*.ipynb"
+  - "*.csv"
