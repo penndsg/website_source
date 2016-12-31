@@ -87,13 +87,13 @@
             {% endif %}
               <a href="/projects/">Projects</a>
             </li>
-            <!-- {% if page.categories.first == 'resources' %} -->
-            <!-- <li class="active"> -->
-            <!-- {% else %} -->
-            <!-- <li> -->
-            <!-- {% endif %} -->
-            <!--   <a href="/resources/">Resources</a> -->
-            <!-- </li> -->
+            {% if page.categories.first == 'resources' %}
+            <li class="active">
+            {% else %}
+            <li>
+            {% endif %}
+              <a href="/resources/">Resources</a>
+            </li>
             {% if page.categories.first == 'members' %}
             <li class="active">
             {% else %}
