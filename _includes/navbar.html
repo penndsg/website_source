@@ -1,8 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
   <div>
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
+    {% if page.big_header %}
+    <nav class="navbar navbar-default transparent-bkg" role="navigation">
+    {% else %}
+    <nav class="navbar navbar-default dark-bkg" role="navigation">
+    {% endif %}
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -10,7 +12,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand text-indent" href="/">
+          <a class="navbar-brand" href="/">
             PDSG
           </a>
         </div>

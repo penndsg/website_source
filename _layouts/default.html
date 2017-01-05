@@ -58,48 +58,51 @@
 
 
   {% if page.title == "Penn Data Science Group" %}
-  <div id="header">
-    <div class="container-fluid text-center home-bkg">
-        {% include navbar.html %}
-        <div class="hugespacer"></div>
-        <div class="hugespacer"></div>
-        <div class="spacer"></div>
-        <div class="text"><img src="/images/PDSG_logo.svg" width="60" height="60" style="display:inline-block;margin-right:20px"></img>
-            <span style="color: #ffffff">Penn Data Science Group</span></div>
-        <div class="hugespacer"></div>
-        <div class="hugespacer"></div>
-        <div class="spacer"></div>
-        <hr/>
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8 text-center smallhead">
-                <span style="color: #bcbcbc">We are a student organization at the University of Pennsylvania<br>
-                dedicated to helping students prepare for a career in data science.</span>
-                </div>
-            <div class="col-sm-2"></div>
-            </div>
-        <div class="hugespacer"></div>
-    </div>
-  </div>
+  <div id="header" class="home-bkg">
   {% elsif page.title == "Events" %}
-  <div id="header" class="container-fluid text-center events-bkg">
-        {% include navbar.html %}
+  <div id="header" class="events-bkg">
   {% elsif page.title == "Projects" %}
-  <div id="header" class="container-fluid text-center projects-bkg">
-        {% include navbar.html %}
+  <div id="header" class="projects-bkg">
   {% elsif page.title == "Resources" %}
-  <div id="header" class="container-fluid text-cente rresources-bkg">
-        {% include navbar.html %}
+  <div id="header" class="resources-bkg">
   {% elsif page.title == "Members" %}
-  <div id="header" class="container-fluid text-center members-bkg">
-        {% include navbar.html %}
+  <div id="header" class="members-bkg">
   {% elsif page.title == "Join" %}
-  <div id="header" class="container-fluid text-center join-bkg">
-        {% include navbar.html %}
+  <div id="header" class="join-bkg">
+  {% elsif page.title == "Contact" %}
+  <div id="header" class="contact-bkg">
   {% else %}
-  <div id="header" class="container-fluid text-center">
-        {% include navbar.html %}
+  <div id="header">
   {% endif %}
+  {% include navbar.html %}
+  {% if page.big_header %}
+    <div class="hugespacer"></div>
+    <div class="bigtitle text-center" style="color: #ffffff">
+    {% if page.title == "Penn Data Science Group" %}
+      <img src="/images/PDSG_logo.svg" width="60" height="60" style="display:inline-block;margin-right:20px">
+      Penn Data Science Group
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+    </div>
+    {% if page.title == "Penn Data Science Group" %}
+    <div class="hugespacer"></div>
+    <hr/>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 text-center smallhead">
+        <span style="color: #bcbcbc">
+          We are a student organization at the University of Pennsylvania<br>
+          dedicated to helping students prepare for a career in data science.
+        </span>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    {% endif %}
+    <div class="hugespacer"></div>
+    <div class="spacer"></div>
+  {% endif %}
+  </div>
 
   <div id="content-wrapper">
     {{ content }}

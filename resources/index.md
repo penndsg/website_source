@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Resources
+big_header: true
 categories:
  - resources
 ---
