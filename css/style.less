@@ -14,8 +14,8 @@
 @import "/css/bootstrap/bootstrap.less";
 // nav default is TOP nav
 // nav inverse is BOTTOM nav (i.e. footer)
-@navbar-default-bg: #494949;
-@navbar-inverse-bg: @navbar-default-bg; 
+@navbar-default-bg: transparent;
+@navbar-inverse-bg: #494949; 
 @navbar-default-link-color: #ffffff;
 @navbar-height: 40px;
 @navbar-margin-bottom: 0px;
@@ -68,7 +68,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
 .container {
     max-width: @global-max-width;
 }
-
+.container-fluid{
+    margin-left:0;
+    margin-right:0;
+    padding-left:0;
+    padding-right:0;
+}
+.home-bkg {
+    background: linear-gradient( @image-darkener, @image-darkener ),
+    url('/images/upenn-philly-skyline.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
 #content-wrapper {
     // background-color: @margin-color;
     .container {
@@ -92,7 +103,8 @@ h2, h3, h4, h5, h6 {
 hr {
     margin-top: 0px;
     margin-bottom: 20px;
-    border-color: #848484;
+    border-color: #bcbcbc;
+    width: 20%;
 }
 
 p + h2, p + h3, p + h4, p + h5, p + h6 {
@@ -226,7 +238,7 @@ img.offset {
 }
 
 .color-band {
-    background-color: @theme-color-1;
+    background-color: #383838;
     color: white;
     width: 100%;
     // position: absolute;
@@ -293,10 +305,9 @@ iframe {
 }
 .text {
     color: #000000;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 35px;
+    line-height: 35px;
     position: relative;
-    top: -48px;
 }
 @keyframes draw {
     0% {
