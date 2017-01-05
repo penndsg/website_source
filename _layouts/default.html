@@ -82,17 +82,23 @@
     </div>
   </div>
   {% elsif page.title == "Events" %}
-  <div id="header" class="events-bkg">
+  <div id="header" class="container-fluid text-center events-bkg">
+        {% include navbar.html %}
   {% elsif page.title == "Projects" %}
-  <div id="header" class="projects-bkg">
+  <div id="header" class="container-fluid text-center projects-bkg">
+        {% include navbar.html %}
   {% elsif page.title == "Resources" %}
-  <div id="header" class="resources-bkg">
+  <div id="header" class="container-fluid text-cente rresources-bkg">
+        {% include navbar.html %}
   {% elsif page.title == "Members" %}
-  <div id="header" class="members-bkg">
+  <div id="header" class="container-fluid text-center members-bkg">
+        {% include navbar.html %}
   {% elsif page.title == "Join" %}
-  <div id="header" class="join-bkg">
+  <div id="header" class="container-fluid text-center join-bkg">
+        {% include navbar.html %}
   {% else %}
-  <div id="header">
+  <div id="header" class="container-fluid text-center">
+        {% include navbar.html %}
   {% endif %}
 
   <div id="content-wrapper">
