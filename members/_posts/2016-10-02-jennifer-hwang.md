@@ -3,6 +3,7 @@ layout: member
 title: Hyun (Jennifer) Hwang
 position: Co-President
 board: true
+founder: true
 degree: PhD CBE 2016
 email: hyunhw at seas.upenn.edu
 website: jennhwang.com

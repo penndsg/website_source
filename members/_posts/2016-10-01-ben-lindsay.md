@@ -3,6 +3,7 @@ layout: member
 title: Ben Lindsay
 position: Co-President
 board: true
+founder: true
 degree: PhD CBE 2019
 email: lindsb at seas.upenn.edu
 website: benjlindsay.com

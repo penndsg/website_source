@@ -1,8 +1,7 @@
 ---
 layout: member
 title: Prateek Singhal
-position: Board Member
-board: true
+associate_board: true
 degree: MSE EMBS 2018
 email: prateeks at seas.upenn.edu
 image: /images/members/prateek-singhal.jpg
