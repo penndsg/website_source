@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Facebook Kaggle Competition: Predicting Check-Ins"
+title: "Predicting Facebook Check-Ins"
 current: true
 ---
 

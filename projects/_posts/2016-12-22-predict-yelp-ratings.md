@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Predict Yelp review rating from review text
+title: Predicting Yelp Review Ratings from Review Text
 current: true
 ---
 

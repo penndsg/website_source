@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "TalkingData Mobile User Demographics (Kaggle Competition)"
+title: "TalkingData Mobile User Demographics"
 current: true
 ---
 

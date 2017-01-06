@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Shelter Animal Outcomes (Kaggle Competition)"
+title: "Shelter Animal Outcomes"
 current: true
 ---
 

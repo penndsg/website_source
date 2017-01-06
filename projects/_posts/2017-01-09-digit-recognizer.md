@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Digit Recognizer (Kaggle Competition)"
+title: "Digit Recognizer"
 current: true
 ---
 
