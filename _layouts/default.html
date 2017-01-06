@@ -77,17 +77,18 @@
   {% include navbar.html %}
   {% if page.big_header %}
     <div class="hugespacer"></div>
+    <div class="hugespacer"></div>
     <div class="bigtitle text-center" style="color: #ffffff">
     {% if page.title == "Penn Data Science Group" %}
-    <div class="hugespacer"></div>
       <img src="/images/PDSG_logo.svg" width="60" height="60" style="display:inline-block;margin-right:20px">
       Penn Data Science Group
     {% else %}
       {{ page.title }}
     {% endif %}
     </div>
-    {% if page.title == "Penn Data Science Group" %}
     <div class="hugespacer"></div>
+    <div class="hugespacer"></div>
+    {% if page.title == "Penn Data Science Group" %}
     <hr/>
     <div class="row">
       <div class="col-sm-2"></div>
