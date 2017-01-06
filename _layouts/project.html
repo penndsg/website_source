@@ -20,7 +20,9 @@ layout: default
       <img class="offset" src="{{ page.image }}">
       {% endif %}
       {% endif %}
-      {% include project_member_loop.html contributors=page.contributors %}
+      {% if page.contributors %}
+        {% include project_member_loop.html contributors=page.contributors %}
+      {% endif %}
       <div class="bigspacer"></div>
       <div class="post">
         {{ content }}
