@@ -5,7 +5,7 @@ position: Co-President
 board: true
 founder: true
 degree: PhD CBE 2016
-email: contact@jennhwang.me 
+email: contact at jennhwang.me 
 website: jennhwang.me
 github: hyunhw
 linkedin: jennhwng
