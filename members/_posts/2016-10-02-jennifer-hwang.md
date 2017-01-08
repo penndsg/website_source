@@ -5,8 +5,8 @@ position: Co-President
 board: true
 founder: true
 degree: PhD CBE 2016
-email: hyunhw at seas.upenn.edu
-website: jennhwang.com
+email: contact@jennhwang.me 
+website: jennhwang.me
 github: hyunhw
 linkedin: jennhwng
 image: /images/members/jennifer-hwang.jpg
