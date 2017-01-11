@@ -349,6 +349,31 @@ iframe {
     height: 100%;
 }
 
+// Calendar stuff
+
+// Large screens
+#google-calendar-container {
+    height: 600px;
+}
+// Medium screens
+@media (min-width: 992px) and (max-width: 1199px){
+    #google-calendar-container {
+        height: 600px;
+    }
+}
+// Small screens
+@media (min-width: 768px) and (max-width: 991px){
+    #google-calendar-container {
+        height: 500px;
+    }
+}
+// Extra Small screens
+@media (max-width: 767px){
+    #google-calendar-container {
+        height: 400px;
+    }
+}
+
 // Some other stuff that might come in handy if we use these features //
 
 // pre {
