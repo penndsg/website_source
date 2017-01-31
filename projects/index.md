@@ -6,7 +6,7 @@ categories:
  - projects
 ---
 
-# PDSG Data Science Competition
+# PDSG Team Project Competition
 
 For the Spring 2017 semester, we're holding a competition with prizes of **$50 Amazon gift cards** for each member (excluding [PDSG board members](/members/#board-members)) of winning teams. There will be at least 2 winning teams. To be eligible for the Amazon gift cards, here's what you have to do:
 
