@@ -12,7 +12,7 @@ For the Spring 2017 semester, we're holding a competition with prizes of **$50 A
 
 1. Form a team of 2-4 PDSG members
 2. Let us know your team members and the dataset(s) you want to work with by posting on our Piazza account by **February 19th**.
-3. Work on your project. Any way you want to extract some value or insight from data is valid for this competition.
+3. Work on your project. Any way you want to extract some value or insight from data is valid for this competition. However, **you will not be eligible for an Amazon gift card if your project is a class assignment.**
 4. Write a short blog post-style report of the your project by **April 6th**.
 5. Give a 10-15 minute presentation on your project in front of a panel of judges around **April 20th** (actual date TBD).
 
@@ -64,3 +64,7 @@ We recommend choosing between one of these competitions:
 ### I'm new to data science. How can I get help with my project?
 
 The best way to get help is to choose a project that already has lots of online resources, like the [Titanic Kaggle competition](https://www.kaggle.com/c/titanic). Additionally, you can post questions either as yourself or anonymously to our Piazza group. Either a fellow group member or a PDSG board member will answer your question or try to point you to someone/something else that can help you.
+
+### I'm doing a data science project as part of a class. Can I use this project for the Team Project Competition?
+
+If you do, you won't be eligible for the $50 Amazon gift cards, but you'll be eligible for everything else. This means you will be able to get help for your project on Piazza, and you will be able to receive raffle tickets for blog posts and presentations regarding your project.
