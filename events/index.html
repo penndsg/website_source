@@ -8,7 +8,15 @@ categories:
 
 <div class="container">
 
-{% for event in site.categories.events %}
+  <div class="text-center">
+    <h1>Upcoming Events</h1>
+    <hr>
+  </div>
+
+  <div class="bigspacer"></div>
+
+{% for event in site.categories.events reversed %}
+  {% if event.upcoming %}
   <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
@@ -35,6 +43,47 @@ categories:
     </div>
     <div class="col-md-2"></div>
   </div>
+  {% endif %}
+{% endfor %}
+
+  <div class="hugespacer"></div>
+
+  <div class="text-center">
+    <h1>Previous Events</h1>
+    <hr>
+  </div>
+
+  <div class="bigspacer"></div>
+
+{% for event in site.categories.events %}
+  {% unless event.upcoming %}
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-5">
+          {% if event.image %}
+          <a class="off" href="{{ event.url }}">
+            <img width=100% src="{{ event.image }}">
+          </a>
+          {% endif %}
+          <div class="spacer"></div>
+        </div>
+        <div class="col-sm-7">
+          <a class="off" href="{{ event.url }}">
+            <h2 class="no-top-margin">{{ event.title }}</h2>
+          </a>
+          <h4><i>{{ event.date | date: "%A, %-m/%-d/%Y" }}, {{ event.time }}</i></h4>
+          <h4><i>{{ event.location }}</i></h4>
+          <div class="smallhead">
+            {{ event.description }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  {% endunless %}
 {% endfor %}
 
   <div class="hugespacer"></div>
