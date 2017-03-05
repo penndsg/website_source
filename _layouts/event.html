@@ -26,7 +26,11 @@ layout: default
         <div class="col-sm-7">
           <h3><i>{{ page.date | date: "%A, %-m/%-d/%Y" }}, {{ page.time }}</i></h3>
           <h3><i>{{ page.location }}</i></h3>
+          {% if page.rsvp %}
+          <h4>Click <a href="{{ page.rsvp }}">here</a> to RSVP</h4>
+          {% endif %}
           <h4>{{ page.description }}</h4>
+
         </div>
       </div>
       {% endif %}

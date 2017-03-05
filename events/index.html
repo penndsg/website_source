@@ -35,8 +35,11 @@ categories:
           </a>
           <h4><i>{{ event.date | date: "%A, %-m/%-d/%Y" }}, {{ event.time }}</i></h4>
           <h4><i>{{ event.location }}</i></h4>
+          {% if event.rsvp %}
+          <h4>Click <a href="{{ event.rsvp }}">here</a> to RSVP</h4>
+          {% endif %}
           <div class="smallhead">
-            {{ event.description }}
+            {{ event.description }} <a href="{{ event.url }}">Read on →</a>
           </div>
         </div>
       </div>
@@ -76,14 +79,12 @@ categories:
           </a>
           <h4><i>{{ event.date | date: "%A, %-m/%-d/%Y" }}, {{ event.time }}</i></h4>
           <h4><i>{{ event.location }}</i></h4>
-          <div class="smallhead">
-            {{ event.description }}
-          </div>
         </div>
       </div>
     </div>
     <div class="col-md-2"></div>
   </div>
+  <div class="bigspacer"></div>
   {% endunless %}
 {% endfor %}
 
