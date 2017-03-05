@@ -23,3 +23,7 @@ description: 'Data Scientists come from all different backgrounds and work in ma
 6:30 - 7:00 PM -- Q&A session and panel discussion
 
 7:00 - 8:00 PM -- Catered reception with light food outside auditorium
+
+### Directions:
+
+To get to the Law Auditorium, enter the [Perelman Center](https://www.google.com/maps/place/Perelman+Center+for+Advanced+Medicine/), go up the escalator, walk into the West Pavilion to the right, take an elevator to the 5th floor, walk through the glass doors, and the auditorium is to your left.
