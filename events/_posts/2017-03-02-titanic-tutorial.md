@@ -1,7 +1,7 @@
 ---
 layout: event
 title: Titanic Kaggle Project Workshop
-upcoming: true
+upcoming: false
 time: "6-7 PM"
 location: Towne 337
 image: /images/events/titanic.png

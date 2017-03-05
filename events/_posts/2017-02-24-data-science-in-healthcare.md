@@ -1,7 +1,7 @@
 ---
 layout: event
 title: The Role of Data Science in Healthcare
-upcoming: true
+upcoming: false
 time: "4:00-5:30 PM"
 location: Law Auditorium, Jordan Medical Education Center, 3400 Civic Center Blvd
 image: /images/events/data-science-in-healthcare.png
