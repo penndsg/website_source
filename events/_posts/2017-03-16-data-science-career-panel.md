@@ -16,6 +16,8 @@ description: 'Data Scientists come from all different backgrounds and work in ma
 - **Doga Kerestecioglu** -- PhD in Sociology at Penn, currently a data scientist at [NBCUniversal](http://www.nbcuniversal.com/).
 - **Erik Sjöland** -- PhD in Mathematics at Aalto University, currently a senior data scientist at [The Wharton School](https://www.wharton.upenn.edu/).
 
+**Note:** These data scientists happen to have PhDs, but you do not need a PhD to get into data science. Anyone interested in a data science career, no matter what degree you're seeking, can benefit from this event.
+
 ### Agenda:
 
 6:00 - 6:30 PM -- Short talks by panelists about their careers
