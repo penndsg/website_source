@@ -6,7 +6,7 @@ time: "4:00-5:30 PM"
 location: Heilmeier Hall (Towne 100)
 image: /images/events/data-science-thomson-reuters.png
 rsvp: "https://goo.gl/forms/kxO1qVOhmkKzmCQZ2"
-description: 'Amit Shavit is a Penn alumnus and data scientist working in New York City. Come learn about what a career in data science at Thomson Reuters looks like and how to transition into a data science career. All students and community members are welcome.'
+description: 'Amit Shavit is a Penn alumnus and data scientist working in Boston. Come learn about what a career in data science at Thomson Reuters looks like and how to transition into a data science career. All students and community members are welcome.'
 ---
 
 ### Speaker:
