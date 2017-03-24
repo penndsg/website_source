@@ -1,7 +1,7 @@
 ---
 layout: event
 title: Data Science Career Panel
-upcoming: true
+upcoming: false
 time: "6:00-8:00 PM"
 location: Law Auditorium, Jordan Medical Education Center, 3400 Civic Center Blvd
 image: /images/events/data-science-career-panel.png

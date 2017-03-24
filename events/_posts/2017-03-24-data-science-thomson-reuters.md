@@ -1,7 +1,7 @@
 ---
 layout: event
 title: Data Science at Thomson Reuters
-upcoming: false
+upcoming: true
 time: "4:00-5:30 PM"
 location: Heilmeier Hall (Towne 100)
 image: /images/events/data-science-thomson-reuters.png
