@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Gallery
-big_header: false
+big_header: true
 categories:
  - gallery
 
