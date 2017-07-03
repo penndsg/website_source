@@ -7,74 +7,155 @@ categories:
 ---
 
 
-<div class="color-band">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <h2>What We Do</h2>
-        <div class="spacer"></div>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h2 id="about-us">About Us</h2>
+      <div class="spacer"></div>
     </div>
-    <div class="row">
-      <div class="col-sm-4 text-center smallhead">
-        <a href="/projects/">
-          <img class="center-block" src="/images/group-project-stock-photo.jpg" width=75%>
-        </a>
-        <div class="spacer"></div>
-        <h3><a class="off" href="/projects/">Projects</a></h3>
-        <p>
-          We split students into small teams to work on practical,
-          self-directed data science projects
-        </p>
-        <div class="bigspacer"></div>
-      </div>
-      <div class="col-sm-4 text-center smallhead">
-        <a href="/events/">
-          <img class="center-block" src="/images/workshops-stock-photo.jpg" width=75%>
-        </a>
-        <div class="spacer"></div>
-        <h3><a class="off" href="/events/">Workshops</a></h3>
-        <p>
-          We hold regular workshops to demonstrate data science
-          tools and techniques
-        </p>
-        <div class="bigspacer"></div>
-      </div>
-      <div class="col-sm-4 text-center smallhead">
-        <a href="/events/">
-          <img class="center-block" src="/images/career-talk-stock-photo.jpg" width=75%>
-        </a>
-        <div class="spacer"></div>
-        <h3><a class="off" href="/events/">Career Talks</a></h3>
-        <p>
-          We bring in data professionals
-          to talk to students about their career paths
-        </p>
-        <div class="bigspacer"></div>
-      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 text-center smallhead">
+      <span>
+        We are a student organization at the University of Pennsylvania
+        dedicated to helping students prepare for a career in data science.
+      </span>
+      <div class="spacer"></div>
+      <span>
+        Here are some of the things we do:
+      </span>
+      <div class="spacer"></div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <div class="bigspacer"></div>
+  <div class="row">
+    <div class="col-sm-4 text-center smallhead">
+      <a href="/datathon/">
+        <img class="center-block" src="/images/group-project-stock-photo.jpg" width=75%>
+      </a>
+      <div class="spacer"></div>
+      <h3><a class="off" href="/datathon/">Datathons</a></h3>
+      <p>
+        We hold datathons to give students a fun opportunity to dive into
+        real-world datasets and win cash and prizes.
+      </p>
+      <div class="bigspacer"></div>
+    </div>
+    <div class="col-sm-4 text-center smallhead">
+      <a href="/events/">
+        <img class="center-block" src="/images/workshops-stock-photo.jpg" width=75%>
+      </a>
+      <div class="spacer"></div>
+      <h3>Workshops</h3>
+      <p>
+        We hold workshops to demonstrate data science
+        tools and techniques
+      </p>
+      <div class="bigspacer"></div>
+    </div>
+    <div class="col-sm-4 text-center smallhead">
+      <a href="/events/">
+        <img class="center-block" src="/images/career-talk-stock-photo.jpg" width=75%>
+      </a>
+      <div class="spacer"></div>
+      <h3>Speakers</h3>
+      <p>
+        We bring in data professionals
+        to talk to students about their fields and careers
+      </p>
+      <div class="bigspacer"></div>
     </div>
   </div>
 </div>
 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h2 id="upcoming-events">Upcoming Events</h2>
+    </div>
+  </div>
+{% for event in site.categories.events limit:2 %}
+  {% if event.upcoming %}
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-5">
+          {% if event.image %}
+          <a class="off" href="{{ event.url }}">
+            <img width=100% src="{{ event.image }}">
+          </a>
+          {% endif %}
+          <div class="spacer"></div>
+        </div>
+        <div class="col-sm-7">
+          <a class="off" href="{{ event.url }}">
+            <h2 class="no-top-margin">{{ event.title }}</h2>
+          </a>
+          <h4><i>{{ event.date | date: "%A, %-m/%-d/%Y" }}, {{ event.time }}</i></h4>
+          <h4><i>{{ event.location }}</i></h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="bigspacer"></div>
+  {% endif %}
+{% endfor %}
+    <div class="col-sm-2"></div>
+  </div>
+</div>
 <div class="bigspacer"></div>
 
 <div class="container">
   <div class="row">
     <div class="col-sm-12 text-center">
-      <h2>Want to <a class="off" href="/join/">Join</a>?</h2>
+      <h2 id="get-involved">Get Involved</h2>
     </div>
   </div>
-  <div class="row smallhead">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8 text-center">
-      <p>
-        Whether you want to work on a team project or
-        you're just interested in a weekly mailing list of data science events,
-        <a href="/join/">sign up here</a> (free!) and we'll hook you up.
-      </p>
+  <div class="bigspacer"></div>
+  <div class="row">
+    <div class="col-sm-4">
+      <a data-scroll class="nounderline" href="https://groups.google.com/forum/#!forum/pdsg-newsletter/join">
+        <button type="button" class="btn btn-primary btn-lg btn-block">
+          Join Our Mailing List
+        </button>
+      </a>
+      <div class="spacer"></div>
+      <span>
+        You'll get emails about PDSG events, events around the community,
+        and job, internship, and fellowship opportunities.
+      </span>
+      <div class="bigspacer"></div>
     </div>
-    <div class="col-sm-2"></div>
-    <div class="hugespacer"></div>
-    <div class="hugespacer"></div>
+    <div class="col-sm-4">
+      <a data-scroll class="nounderline" href="https://www.facebook.com/PennDSG">
+        <button type="button" class="btn btn-primary btn-lg btn-block">
+          Like Us On <i class="fa fa-facebook-square"></i>
+        </button>
+      </a>
+      <div class="spacer"></div>
+      <span>
+        This will give you Facebook notifications about upcoming events.
+      </span>
+      <div class="bigspacer"></div>
+    </div>
+    <div class="col-sm-4">
+      <a data-scroll class="nounderline" href="mailto:board@penndsg.com">
+        <button type="button" class="btn btn-primary btn-lg btn-block">
+          Email Us
+        </button>
+      </a>
+      <div class="spacer"></div>
+      <span>
+        Whether you are a company interested in sponsoring a future datathon,
+        a dataist interested in giving a talk or leading a workshop,
+        a student interested in getting more involved behind the scenes,
+        we'd love to hear from you!
+      </span>
+      <div class="bigspacer"></div>
+    </div>
   </div>
 </div>

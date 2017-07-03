@@ -52,6 +52,10 @@
   <!-- also controls color of footer logo on mouseover -->
   <script src="/js/footer.js"></script>
 
+  <!-- Smooth Scrolling -->
+  <script src="/js/smooth-scroll.min.js"></script>
+
+
 </head>
 
 <body>
@@ -88,22 +92,42 @@
       {{ page.title }}
     {% endif %}
     </div>
-    <div class="hugespacer"></div>
-    <div class="hugespacer"></div>
     {% if page.title == "Penn Data Science Group" %}
-    <hr/>
+    <div class="hugespacer"></div>
     <div class="bigspacer"></div>
-    <div class="spacer"></div>
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8 text-center smallhead">
-        <span style="color: #bcbcbc">
-          We are a student organization at the University of Pennsylvania<br>
-          dedicated to helping students prepare for a career in data science.
-        </span>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 text-center">
+          <a data-scroll class="nounderline" href="#about-us">
+            <button type="button" class="btn btn-primary btn-lg btn-block">
+              About Us<br>
+              &darr;
+            </button>
+          </a>
+          <div class="spacer"></div>
+        </div>
+        <div class="col-sm-4 text-center">
+          <a data-scroll class="nounderline" href="#upcoming-events">
+            <button type="button" class="btn btn-primary btn-lg btn-block">
+              Upcoming Events<br>
+              &darr;
+            </button>
+          </a>
+          <div class="spacer"></div>
+        </div>
+        <div class="col-sm-4 text-center">
+          <a data-scroll class="nounderline" href="#get-involved">
+            <button type="button" class="btn btn-primary btn-lg btn-block">
+              Get Involved<br>
+              &darr;
+            </button>
+          </a>
+          <div class="spacer"></div>
+        </div>
       </div>
-      <div class="col-sm-2"></div>
     </div>
+    {% else %}
+    <div class="hugespacer"></div>
     {% endif %}
     <div class="hugespacer"></div>
     <div class="spacer"></div>
@@ -146,6 +170,11 @@
       <div class="spacer"></div>
     </nav>
   </div>
-
 </body>
+
+<!-- Initialize the Smooth Scrolling function -->
+<script>
+  smoothScroll.init();
+</script>
+
 </html>
