@@ -76,8 +76,9 @@ categories:
       <h2 id="upcoming-events">Upcoming Events</h2>
     </div>
   </div>
-{% for event in site.categories.events limit:2 %}
-  {% if event.upcoming %}
+   <div class="bigspacer"></div>
+  {% assign displayEvents = site.categories.events | where: 'upcoming', 'true' %}
+{% for event in displayEvents limit:2 %}
   <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
@@ -102,7 +103,6 @@ categories:
     <div class="col-md-2"></div>
   </div>
   <div class="bigspacer"></div>
-  {% endif %}
 {% endfor %}
     <div class="col-sm-2"></div>
   </div>
