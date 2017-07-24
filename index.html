@@ -76,8 +76,22 @@ categories:
       <h2 id="upcoming-events">Upcoming Events</h2>
     </div>
   </div>
-   <div class="bigspacer"></div>
-  {% assign displayEvents = site.categories.events | where: 'upcoming', 'true' %}
+  <div class="bigspacer"></div>
+{% assign displayEvents = site.categories.events | where: 'upcoming', 'true' %}
+{% if displayEvents.size == 0 %}
+  <div class="row text-center">
+    <div class="col-md-12">
+      No upcoming events posted right now.
+      <a href="https://www.facebook.com/PennDSG">
+        Like us on Facebook
+      </a> or
+      <a href="https://groups.google.com/forum/#!forum/pdsg-newsletter/join">
+        join our mailing list
+      </a>
+      to be notified when a new event is posted.
+    </div>
+  </div>
+{% endif %}
 {% for event in displayEvents reversed limit:2 %}
   <div class="row">
     <div class="col-md-2"></div>
@@ -106,6 +120,13 @@ categories:
 {% endfor %}
     <div class="col-sm-2"></div>
   </div>
+  <div class="row text-center">
+    <a href="/events/">
+      <div class="col-md-12">
+        View all previous and upcoming events
+      </div>
+    </a>
+  </div>
 </div>
 <div class="bigspacer"></div>
 
@@ -117,7 +138,7 @@ categories:
   </div>
   <div class="bigspacer"></div>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-md-3">
       <a data-scroll class="nounderline" href="https://groups.google.com/forum/#!forum/pdsg-newsletter/join">
         <button type="button" class="btn btn-primary btn-lg btn-block">
           Join Our Mailing List
@@ -125,12 +146,12 @@ categories:
       </a>
       <div class="spacer"></div>
       <span>
-        You'll get emails about PDSG events, events around the community,
+        We send out regular emails about PDSG events, events around the community,
         and job, internship, and fellowship opportunities.
       </span>
       <div class="bigspacer"></div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-md-3">
       <a data-scroll class="nounderline" href="https://www.facebook.com/PennDSG">
         <button type="button" class="btn btn-primary btn-lg btn-block">
           Like Us On <i class="fa fa-facebook-square"></i>
@@ -138,11 +159,26 @@ categories:
       </a>
       <div class="spacer"></div>
       <span>
-        This will give you Facebook notifications about upcoming events.
+        All of our events are posted on Facebook. Like us to get notifications about upcoming events.
       </span>
       <div class="bigspacer"></div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-md-3">
+      <a data-scroll class="nounderline" href="https://pdsg.slack.com">
+        <button type="button" class="btn btn-primary btn-lg btn-block">
+          Join Us On <i class="fa fa-slack"></i>
+        </button>
+      </a>
+      <div class="spacer"></div>
+      <span>
+        Our growing Slack community is a great place to chat with other
+        students interested in data science,
+        find other students to work on projects with,
+        and help each other with technical questions.
+      </span>
+      <div class="bigspacer"></div>
+    </div>
+    <div class="col-md-3">
       <a data-scroll class="nounderline" href="mailto:board@penndsg.com">
         <button type="button" class="btn btn-primary btn-lg btn-block">
           Email Us
