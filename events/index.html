@@ -9,6 +9,7 @@ categories:
 <div class="container">
 
   <div class="text-center">
+    <br />
     <h1>Upcoming Events</h1>
     <hr>
   </div>
@@ -24,7 +25,7 @@ categories:
         <div class="col-sm-5">
           {% if event.image %}
           <a class="off" href="{{ event.url }}">
-            <img width=100% src="{{ event.image }}">
+            <img width=100% src="{{ event.image }}" style="border-radius: 5px">
           </a>
           {% endif %}
           <div class="spacer"></div>
@@ -68,7 +69,7 @@ categories:
         <div class="col-sm-5">
           {% if event.image %}
           <a class="off" href="{{ event.url }}">
-            <img width=100% src="{{ event.image }}">
+            <img width=100% src="{{ event.image }}" style="border-radius: 5px">
           </a>
           {% endif %}
           <div class="spacer"></div>
@@ -90,7 +91,7 @@ categories:
 
   <div class="hugespacer"></div>
   <div id="calendar-title" class="text-center">
-    <h2>Data Science Events Near Penn Campus</h2>
+    <h2>Data Science Events at Penn</h2>
   </div>
   <div class="bigspacer"></div>
 
