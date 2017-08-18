@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Rishabh Gupta
-position: Board Member
+position: VP Online Presence
 board: true
 degree: MSE EMBS 2018
 email: rgupt at seas.upenn.edu

@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Benjamin Fineran
-position: Board Member
+position: VP External
 board: true
 degree: BSE NETS 2019
 email: fineran at seas.upenn.edu
