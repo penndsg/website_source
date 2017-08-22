@@ -10,3 +10,4 @@ Gemfile.lock
 .ipynb_checkpoints/
 *.pyc
 *.csv
+*.Rhistory
