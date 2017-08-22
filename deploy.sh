@@ -18,8 +18,8 @@ fi
 git fetch --all
 git reset --hard origin/master
 # regenerate site content
-cd -
-jekyll build
+cd-
+bundle exec jekyll build
 cd -
 # commmit changes and push to remote
 git add .
