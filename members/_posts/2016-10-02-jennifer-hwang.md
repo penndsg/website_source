@@ -4,7 +4,7 @@ title: Hyun (Jennifer) Hwang
 position: Co-President
 board: true
 founder: true
-degree: PhD CBE 2016
+degree: PhD CBE 2017
 email: contact at jennhwang.me 
 website: jennhwang.me
 github: hyunhw

@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Rob Wexler
-degree: PhD Chemistry 2019
+degree: PhD Chem 2019
 position: VP Data Projects
 board: true
 email: rwexler at sas.upenn.edu
