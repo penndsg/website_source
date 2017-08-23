@@ -1,6 +1,6 @@
 ---
 layout: event
-title: Data Science Internships Panel
+title: PDSG Speaker Series: Data Science Internships Panel
 upcoming: true
 time: "6 PM -7 PM"
 location: Towne 337
