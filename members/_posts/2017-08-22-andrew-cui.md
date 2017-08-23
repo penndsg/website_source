@@ -1,9 +1,9 @@
 ---
 layout: member
 title: Andrew Cui
-degree: BSE + BS Econ 2020
 position: Associate Board Member
 associate_board: true
+degree: BSE + BS Econ 2020
 email: yiqunc at seas.upenn.edu
 github: andrew-cui
 website: www.andrewcui.com
