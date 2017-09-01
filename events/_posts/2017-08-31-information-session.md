@@ -1,7 +1,7 @@
 ---
 layout: event
 title: "PDSG Fall 2017 Information Session"
-upcoming: true
+upcoming: false
 time: "6:00 - 7:00 PM"
 location: Berger Auditorium, Skirkanich Hall
 image: "/images/events/info-session-fall-17.png"
