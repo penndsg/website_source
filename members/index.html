@@ -17,11 +17,11 @@ categories:
 {% assign loopindex = -1 %}
 {% for member in site.categories.members reversed %}
   {% if member.board %}
-    {% assign loopindex = counter | modulo: 3 %}
+    {% assign loopindex = counter | modulo: 4 %}
     {% if loopindex == 1 %}
   <div class="row">
     {% endif %}
-    <div class="col-sm-4 text-center smallhead">
+    <div class="col-sm-3 text-center smallhead">
       <a href="{{ member.url }}">
         <img class="member-img" src="{{ member.image }}">
       </a>
@@ -29,7 +29,7 @@ categories:
       <a href="{{ member.url }}" class="off">
         <b>{{ member.title }}</b>
       </a>
-      <p>{{ member.position }} / {{ member.degree }}</p>
+      <p>{{ member.position }}<br>{{ member.degree }}</p>
       <div class="spacer"></div>
       <div class="spacer"></div>
     </div>
@@ -118,11 +118,11 @@ categories:
 {% assign loopindex = -1 %}
 {% for member in site.categories.members reversed %}
   {% if member.founder %}
-    {% assign loopindex = counter | modulo: 3 %}
+    {% assign loopindex = counter | modulo: 4 %}
     {% if loopindex == 1 %}
   <div class="row">
     {% endif %}
-    <div class="col-sm-4 text-center smallhead">
+    <div class="col-sm-3 text-center smallhead">
       <a href="{{ member.url }}">
         <img class="member-img" src="{{ member.image }}">
       </a>
@@ -130,7 +130,7 @@ categories:
       <a href="{{ member.url }}" class="off">
         <b>{{ member.title }}</b>
       </a>
-      <p>{{ member.position }} / {{ member.degree }}</p>
+      <p>{{ member.position }}<br>{{ member.degree }}</p>
       <div class="spacer"></div>
       <div class="spacer"></div>
     </div>
