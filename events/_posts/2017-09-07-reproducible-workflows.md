@@ -7,7 +7,7 @@ location: Towne 337
 image: "/images/events/reproducible-workflows.png"
 big_header: false
 rsvp: "https://goo.gl/forms/NXII7dvkpKvaAHlI3"
-description: 'We have invited Brett Beaulieu-Jones and Jeremy Leipzig to talk about their cutting-edge research. Come learn about their contributions to data science!'
+description: 'We have invited Brett Beaulieu-Jones and Jeremy Leipzig to talk about their cutting-edge research. Come learn about their contributions to data science! Food will be provided.'
 ---
 
 #### *6:00* Jeremy Leipzig, Sr. Scientist at Cytovas, LLC. and PhD student at the Metadata Research Center, College of Computing and Informatics, Drexel University
