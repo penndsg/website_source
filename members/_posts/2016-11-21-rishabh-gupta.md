@@ -3,7 +3,7 @@ layout: member
 title: Rishabh Gupta
 position: VP Online Presence
 board: true
-degree: MSE DATS 2018
+degree: MSE Data Science 2018
 email: rgupt at seas.upenn.edu
 image: /images/members/rishabh-gupta.jpg
 linkedin: rishabh-gupta-6741b822
