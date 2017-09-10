@@ -8,7 +8,7 @@ categories:
 
 ## Join Our Mailing List
 
-We send out regular emails to notify data-oriented students of events or opportunities that may be of interest. [Click here to join.](https://groups.google.com/forum/#!forum/pdsg-newsletter/join/) Here's a sample of the types of things we put in these emails:
+We send out regular emails to notify data-oriented students of events or opportunities that may be of interest. [Click here to join.](http://penndsg.us16.list-manage.com/subscribe?u=8d37ea8911e6f07a325e06b06&id=1b1f4112db) Here's a sample of the types of things we put in these emails:
 
 - Upcoming PDSG events (and other group events)
 - Job opportunities
