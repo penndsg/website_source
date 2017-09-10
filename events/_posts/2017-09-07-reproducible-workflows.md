@@ -1,7 +1,7 @@
 ---
 layout: event
 title: "PDSG Speaker Series: Reproducible Workflows"
-upcoming: true
+upcoming: false
 time: "6:00 - 7:00 PM"
 location: Towne 337
 image: "/images/events/reproducible-workflows.png"
