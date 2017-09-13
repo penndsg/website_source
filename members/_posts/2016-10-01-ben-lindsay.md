@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Ben Lindsay
-position: Co-President
+position: President
 board: true
 founder: true
 degree: PhD CBE 2019
