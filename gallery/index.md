@@ -6,6 +6,9 @@ categories:
  - gallery
 
 images:
+  - image_path: IMG_20170914_182400.jpg
+  - image_path: IMG_20170914_182405.jpg
+  - image_path: IMG_20170914_182408.jpg
   - image_path: 20170126-IMG_9112.jpg
   - image_path: 20170126-IMG_9131.jpg
   - image_path: 20170126-IMG_9135.jpg
