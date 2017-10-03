@@ -60,7 +60,7 @@ If you are interested in finding a mentor to help grow your skills and career in
 </ul>
 </div>
 <div class="mc-field-group">
-	<label for="mce-MMERGE3">Skills you would want to learn </label>
+	<label for="mce-MMERGE3">Skills you want to learn </label>
 	<input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
 </div>
 	<div id="mce-responses" class="clear">
