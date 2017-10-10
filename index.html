@@ -135,33 +135,6 @@ categories:
 </div>
 <div class="bigspacer"></div>
 <div class="bigspacer"></div>
-
-<div class="container sponsors">
-  <div class="row">
-    <div class="col-sm-12 text-center">
-      <h2 id="get-involved">Sponsors</h2>
-      <h4>Thank you to our sponsors for helping us bring great events and resources to the Penn community!</h4>
-    </div>
-  </div>
-  <div class="bigspacer"></div>
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-xs-6 col-sm-3 col-md-2 d-flex align-items-center justify-content-center">
-      <a href="http://www.correlation-one.com/"><img src="sponsors/correlation-one.png" /></a>
-    </div>
-    <div class="col-xs-6 col-sm-3 col-md-2 d-flex align-items-center justify-content-center">
-      <a href="https://www.citadel.com/"><img src="sponsors/citadel.png" /></a>
-    </div>
-    <div class="col-xs-6 col-sm-3 col-md-2 d-flex align-items-center justify-content-center">
-      <a href="https://www.datacamp.com/"><img src="sponsors/datacamp.png" /></a>
-    </div>
-    <div class="col-xs-6 col-sm-3 col-md-2 d-flex align-items-center justify-content-center">
-      <a href="http://www.mheducation.com/home.html"><img src="sponsors/mcgrawhill.jpeg" /></a>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-</div>
-<div class="bigspacer"></div>
 <div class="bigspacer"></div>
 
 
@@ -174,7 +147,7 @@ categories:
   <div class="bigspacer"></div>
   <div class="row">
     <div class="col-md-3">
-      <a data-scroll class="nounderline" href="http://penndsg.us16.list-manage.com/subscribe?u=8d37ea8911e6f07a325e06b06&id=1b1f4112db">
+      <a class="nounderline" href="http://penndsg.us16.list-manage.com/subscribe?u=8d37ea8911e6f07a325e06b06&id=1b1f4112db">
         <button type="button" class="btn btn-primary btn-lg btn-block">
           Join Our Mailing List
         </button>
@@ -187,7 +160,7 @@ categories:
       <div class="bigspacer"></div>
     </div>
     <div class="col-md-3">
-      <a data-scroll class="nounderline" href="https://www.facebook.com/PennDSG">
+      <a class="nounderline" href="https://www.facebook.com/PennDSG">
         <button type="button" class="btn btn-primary btn-lg btn-block">
           Like Us On <i class="fa fa-facebook-square"></i>
         </button>
@@ -199,7 +172,7 @@ categories:
       <div class="bigspacer"></div>
     </div>
     <div class="col-md-3">
-      <a data-scroll class="nounderline" href="https://join.slack.com/t/pdsg/signup/">
+      <a class="nounderline" href="https://join.slack.com/t/pdsg/signup/">
         <button type="button" class="btn btn-primary btn-lg btn-block">
           Join Us On <i class="fa fa-slack"></i>
         </button>
@@ -214,7 +187,7 @@ categories:
       <div class="bigspacer"></div>
     </div>
     <div class="col-md-3">
-      <a data-scroll class="nounderline" href="mailto:board@penndsg.com">
+      <a class="nounderline" href="mailto:board@penndsg.com">
         <button type="button" class="btn btn-primary btn-lg btn-block">
           Email Us
         </button>
@@ -230,3 +203,34 @@ categories:
     </div>
   </div>
 </div>
+
+<div class="container sponsors">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h2 id="sponsors">Sponsors</h2>
+      <h4>Thank you to our sponsors for helping us bring great events and resources to the Penn community!</h4>
+    </div>
+  </div>
+  <div class="bigspacer"></div>
+{% assign counter = 1 %}
+{% assign loopindex = -1 %}
+{% for sponsor in site.categories.sponsors %}
+  {% assign loopindex = counter | modulo: 4 %}
+  {% if loopindex == 1 %}
+  <div class="row">
+    <!-- <div class="col-md-2"></div> -->
+  {% endif %}
+    <div class="col-sm-3 d-flex align-items-center justify-content-center">
+      <a href="{{ sponsor.link }}"><img src="{{ sponsor.image }}" /></a>
+    </div>
+    {% if loopindex == 0 %}
+    <!-- <div class="col-md-2"></div> -->
+  </div>
+    {% endif %}
+    {% assign counter = counter | plus: 1 %}
+{% endfor %}
+{% if loopindex > 0 %}
+  </div>
+{% endif %}
+</div>
+<div class="bigspacer"></div>
