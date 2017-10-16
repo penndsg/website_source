@@ -7,16 +7,16 @@ categories:
 
 images:
   #- image_path: DSC_0806.jpg
-  - image_path: DSC_0808.jpg
-  - image_path: DSC_0816.jpg
+  #- image_path: DSC_0808.jpg
+  #- image_path: DSC_0816.jpg
   #- image_path: DSC_0820.jpg
-  - image_path: DSC_0835.jpg
+  #- image_path: DSC_0835.jpg
   #- image_path: DSC_0842.jpg
-  - image_path: DSC_0845.jpg
-  - image_path: DSC_0880.jpg
-  - image_path: DSC_1347.jpg
-  - image_path: DSC_1353.jpg
-  - image_path: DSC_1362.jpg
+  #- image_path: DSC_0845.jpg
+  #- image_path: DSC_0880.jpg
+  #- image_path: DSC_1347.jpg
+  #- image_path: DSC_1353.jpg
+  #- image_path: DSC_1362.jpg
   - image_path: IMG_20170914_182400.jpg
   - image_path: IMG_20170914_182405.jpg
   - image_path: IMG_20170914_182408.jpg
