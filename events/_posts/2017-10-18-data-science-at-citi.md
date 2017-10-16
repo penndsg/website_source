@@ -10,4 +10,4 @@ big_header: false
 description: 'Terry Benzschawel, Managing Director of Data Science at Citi, will discuss the role of data science at Citi'
 ---
 
-Come hear Terry Benzschawel, Managing Director of Data Science at Citi, talk about the role of data science at Citi.
+PDSG, in collaboration with WAC, is organizing a talk by Terry Benzschawel, Managing Director of Data Science at Citi, on the role of data science at Citi.
