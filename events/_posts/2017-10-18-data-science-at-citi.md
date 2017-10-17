@@ -3,14 +3,14 @@ layout: event
 title: "Data Science at Citi"
 upcoming: true
 time: "1:15 - 2:00 PM"
-location: Raisler Lounge(Towne 225)
+location: <span style='text-decoration:line-through'>Raisler Lounge(Towne 225)</span><span style='color:red'>(cancelled)</span>
 image: "/images/events/data-science-at-citi.png"
-rsvp: "https://goo.gl/forms/xgnn8J5C3CWPUpF82"
+#rsvp: "https://goo.gl/forms/xgnn8J5C3CWPUpF82"
 big_header: false
-description: 'Terry Benzschawel, Managing Director of Data Science at Citi, will discuss the role of data science at Citi. Co-hosted with <a href="http://wcai.wharton.upenn.edu/wharton-analytics-fellows-home/">Wharton Analytics Fellows</a>'
+description: "Terry Benzschawel, Managing Director of Data Science at Citi, will discuss the role of data science at Citi. Co-hosted with <a href='http://wcai.wharton.upenn.edu/wharton-analytics-fellows-home/'>Wharton Analytics Fellows</a>"
 ---
 
-PDSG and [Wharton Analytics Fellows](http://wcai.wharton.upenn.edu/wharton-analytics-fellows-home/) are co-hosting a talk by Terry Benzschawel, Managing Director of Data Science at Citi, on the role of data science at Citi.
+<span style='color:red'>Please note that this event has been cancelled.</span><br>PDSG and [Wharton Analytics Fellows](http://wcai.wharton.upenn.edu/wharton-analytics-fellows-home/) are co-hosting a talk by Terry Benzschawel, Managing Director of Data Science at Citi, on the role of data science at Citi.
 
 Bio:
 
