@@ -1,7 +1,7 @@
 ---
 layout: event
 title: "Data Science in Broadcast Media"
-upcoming: true
+upcoming: false
 time: "6:00 - 7:00 PM"
 location: Towne 337
 image: "/images/events/data-science-in-broadcast-media.png"
