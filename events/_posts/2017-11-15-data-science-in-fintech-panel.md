@@ -11,6 +11,7 @@ description: 'Learn how data scientists at Capital One, Stash, and Orchard are u
 ---
 
 <b>Panelists:</b><br/><br/>
-Christine Hurtubise, Data Scientist at Stash Invest<br/>
+Christine Hurtubise, VP of Data Science at Stash Invest<br/>
 Hongjun Wang, Data Science Director at Capital One<br/>
-Michael Toth, Senior Manager of Analytics and Research at Orchard
+Michael Toth, Senior Manager of Analytics and Research at Orchard<br/>
+Louis Ben Arous, Senior Data Scientist at Quovo
