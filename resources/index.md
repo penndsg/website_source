@@ -13,6 +13,7 @@ categories:
 - [reddit.com/r/datasets](https://www.reddit.com/r/datasets/)
 - [kaggle.com/competitions](https://www.kaggle.com/competitions?sortBy=deadline&group=all&page=1&segment=allCategories)
 - [kaggle.com/datasets](https://www.kaggle.com/datasets)
+- [snap.stanford.edu](http://snap.stanford.edu/data/index.html)
 - [17 places to find datasets for data science projects](http://www.dataquest.io/blog/free-datasets-for-projects/) (dataquest.io)
 
 ## Data Science Career Advice
