@@ -8,6 +8,7 @@ categories:
 
 ## Lists of Datasets
 
+- [Data.World](https://data.world/)
 - [opendataphilly.org](https://www.opendataphilly.org/)
 - [reddit.com/r/datasets](https://www.reddit.com/r/datasets/)
 - [kaggle.com/competitions](https://www.kaggle.com/competitions?sortBy=deadline&group=all&page=1&segment=allCategories)
