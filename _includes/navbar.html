@@ -53,6 +53,13 @@
             {% endif %}
               <a href="/join/">Join</a>
             </li>
+            {% if page.categories.first == 'alumni' %}
+            <li class="active">
+            {% else %}
+            <li>
+            {% endif %}
+              <a href="/alumni/">Alumni</a>
+            </li>
             {% if page.categories.first == 'contact' %}
             <li class="active">
             {% else %}
