@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Alumni
+title: Collaborate
 big_header: true
 categories:
- - alumni
+ - collaborate
 ---
 
-## Collaborate as Penn Alumni
+## Collaborate with us
 
-If you are a Penn alumnus/alumna and would like to collaborate with PDSG, please fill the form below. We will get back to you as soon as we can!
+If you would like to collaborate with PDSG, please fill the form below. We will get back to you as soon as we can!
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
