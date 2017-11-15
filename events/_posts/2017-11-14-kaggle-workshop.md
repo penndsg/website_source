@@ -1,7 +1,7 @@
 ---
 layout: event
 title: Kaggle + DataCamp Workshop
-upcoming: true
+upcoming: false
 time: "7:00 PM - 8:00 PM"
 location: JMHH F70, Jon M. Huntsman Hall
 image: /images/events/kaggle_datacamp_workshop.jpg
