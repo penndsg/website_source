@@ -1,7 +1,7 @@
 ---
 layout: event
 title: "Data Science in Fintech Panel"
-upcoming: true
+upcoming: false
 time: "6:00 - 7:00 PM"
 location: JMHH 340, Jon M. Huntsman Hall
 image: "/images/events/data-science-in-fintech-panel.png"
