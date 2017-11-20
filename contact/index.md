@@ -15,6 +15,8 @@ We have a growing community of data-oriented students on Slack. Anyone with a UP
 If you don't feel like using Slack, feel free to send us an email any time. You can send an email to all the executive board members using [board@penndsg.com](mailto:board@penndsg.com). Whoever is most relevant to the email will respond as soon as he or she can. Otherwise, you could check out the [members](/members/) page and email anyone individually if you know who you want to talk to.
 
 ## Feedback
+
+We value any comments/suggestions you have regarding our events and other programs. Please submit a feedback below.
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
