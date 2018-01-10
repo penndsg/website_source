@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Ben Lindsay
-position: President
+position: VP Events
 board: true
 founder: true
 degree: PhD CBE 2019

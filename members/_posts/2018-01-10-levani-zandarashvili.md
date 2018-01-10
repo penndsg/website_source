@@ -1,6 +1,6 @@
 ---
 layout: member
-position: Associate Board Member
+position: Data Projects Associate
 title: Levani Zandarashvili
 degree: Postdoctoral Fellow
 email: levaniz at mail.med.upenn.edu

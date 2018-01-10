@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Rishabh Gupta
-position: VP Online Presence
+position: VP Marketing
 board: true
 degree: MSE Data Science 2018
 email: rgupt at seas.upenn.edu

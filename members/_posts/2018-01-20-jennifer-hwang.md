@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Hyun (Jennifer) Hwang
-position: Co-President
+position: Co-Founder
 board: false
 founder: true
 degree: PhD CBE 2017

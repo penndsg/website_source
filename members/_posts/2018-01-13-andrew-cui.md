@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Andrew Cui
-position: Associate Board Member
+position: Marketing Associate
 associate_board: true
 degree: BSE + BS Econ 2020
 email: yiqunc at seas.upenn.edu

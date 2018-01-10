@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Benjamin Fineran
-position: VP External
+position: VP Marketing
 board: true
 degree: MSE Data Science 2019 + BSE NETS 2019
 email: fineran at seas.upenn.edu

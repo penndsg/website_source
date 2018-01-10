@@ -59,10 +59,16 @@ categories:
   <div class="row">
     {% endif %}
     <div class="col-sm-3 text-center smallhead">
+      <a href="{{ member.url }}">
+        <img class="member-img" src="{{ member.image }}">
+      </a>
+      <div class="spacer"></div>
       <a href="{{ member.url }}" class="off">
         <b>{{ member.title }}</b>
       </a>
-      <p>{{ member.degree }}</p>
+      <p>{{ member.position }}<br>{{ member.degree }}</p>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
     </div>
     {% if loopindex == 0 %}
   </div>
