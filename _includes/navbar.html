@@ -60,6 +60,13 @@
             {% endif %}
               <a href="/collaborate/">Collaborate</a>
             </li>
+            {% if page.categories.first == 'blog' %}
+            <li class="active">
+            {% else %}
+            <li>
+            {% endif %}
+              <a href="/blog/">Blog</a>
+            </li>
             {% if page.categories.first == 'contact' %}
             <li class="active">
             {% else %}
