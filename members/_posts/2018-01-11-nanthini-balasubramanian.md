@@ -1,8 +1,8 @@
 ---
 layout: member
 title: Nanthini Balasubramanian
-position: Education Associate
-associate_board: true
+position: VP Education
+board: true
 degree: MSE CIS 2019
 email: nanthini at seas.upenn.edu
 linkedin: nanthini-balasubramanian
