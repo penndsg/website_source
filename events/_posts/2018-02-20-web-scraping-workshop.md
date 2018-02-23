@@ -1,7 +1,7 @@
 ---
 layout: event
 title: Web Scraping Workshop
-upcoming: true
+upcoming: false
 time: "4:00 PM - 5:00 PM"
 location: Levine 307
 image: /images/events/web_scraping.jpg
