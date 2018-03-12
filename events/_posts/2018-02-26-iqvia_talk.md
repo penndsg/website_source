@@ -1,7 +1,7 @@
 ---
 layout: event
 title: Internship and Data Science at IQVIA
-upcoming: true
+upcoming: false
 time: "6:00 PM - 7:00 PM"
 location: Towne 337
 image: /images/events/IQVIA.jpg
