@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Detect Headers in CSV Tables Statistically
-big_header: false
 author: Mingyang Li
 ---
 
