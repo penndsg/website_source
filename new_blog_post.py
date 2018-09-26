@@ -5,6 +5,7 @@
 
 import sys
 from datetime import datetime
+from os.path import isfile
 
 TEMPLATE = """---
 layout: post
@@ -13,7 +14,9 @@ title: "{title}"
 # image: /images/blog/{slug}.png
 ---
 
-Project description here. You can add links like [this](https://www.google.com/search?q=this).
+Blog post content here. To see what you can do with Markdown, check out
+[this Markdown cheatsheet]
+(https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 """
 
 
@@ -23,12 +26,16 @@ def new_blog_post(title):
     f_create = "blog/_posts/{}-{:0>2}-{:0>2}-{}.md".format(
         today.year, today.month, today.day, slug)
     t = TEMPLATE.strip().format(title=title, slug=slug)
-    with open(f_create, 'w') as w:
-        w.write(t)
-        w.write('\n')
-    print("File created -> " + f_create)
-    print("Open this file and add author name and (optionally) an image at " +
-          "images/blog/{}.png.".format(slug))
+    if isfile(f_create):
+        print("{} already exists. ".format(f_create) +
+              "You can either delete it or pick a different title.")
+    else:
+        with open(f_create, 'w') as w:
+            w.write(t)
+            w.write('\n')
+        print("File created -> " + f_create)
+        print("Open this file and add author name and (optionally) an image " +
+              "at images/blog/{}.png.".format(slug))
 
 
 if __name__ == '__main__':

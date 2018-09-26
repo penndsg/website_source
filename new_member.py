@@ -5,6 +5,7 @@
 
 import sys
 from datetime import datetime
+from os.path import isfile
 
 TEMPLATE = """---
 layout: member
@@ -36,11 +37,16 @@ def new_member(name, deg_string='', date_slug=None, email=None):
     f_create = "members/_posts/{}-{}.md".format(date_slug, name_slug)
     t = TEMPLATE.strip().format(name=name, deg_string=deg_string,
                                 name_slug=name_slug, email=email)
-    with open(f_create, 'w') as w:
-        w.write(t)
-        w.write('\n')
-    print("File created -> " + f_create)
-    print("Edit this file and add square profile picture at images/members/{}.jpg".format(name_slug))
+    if isfile(f_create):
+        print("{} already exists. ".format(f_create) +
+              "You can either delete it or pick a different title.")
+    else:
+        with open(f_create, 'w') as w:
+            w.write(t)
+            w.write('\n')
+        print("File created -> " + f_create)
+        print("Edit this file and add square profile picture at " +
+              "images/members/{}.jpg".format(name_slug))
 
 
 if __name__ == '__main__':
