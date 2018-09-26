@@ -1,15 +1,9 @@
 ---
 layout: post
-title: Blog
-big_header: true
-categories:
- - blog
+title: Detect Headers in CSV Tables Statistically
+big_header: false
+author: Mingyang Li
 ---
-
-<h2>Detect Headers in CSV Tables Statistically</h2>
-<br/>
-<img src="https://cdn-images-1.medium.com/fit/c/120/120/0*xKvSlSdllO4-5ZuS." style="margin-left:0;width:8%;height:8%">
-<b>Mingyang Li</b>
 
 Generally speaking, a CSV table may or may not contain a header, and the header, when it exists, may consists of multiple lines. Question: How can we detect which first rows constitutes the header of a CSV file?
 

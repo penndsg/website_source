@@ -1,0 +1,46 @@
+---
+layout: default
+title: Blog
+categories:
+ - blog
+---
+
+<div class="container">
+
+  <div class="col-xs-12 text-center">
+    <h1>Current Posts</h1>
+    <hr/>
+  </div>
+
+{% for post in site.categories.blog %}
+  {% cycle 'add rows': '<div class="row">', nil, nil %}
+<div class="col-sm-4 text-center">
+  <h3><a class="off" href="{{ post.url }}">{{ post.title }}</a></h3>
+  <div class="smallspacer"></div>
+  <a href="{{ post.url }}">
+    <img class="center-block" src="{{ post.image }}">
+  </a>
+  <div class="smallhead text-center"><i>{{ post.date | date: "%b %-d, %Y" }}</i></div>
+  <div class="smallspacer"></div>
+  <div class="smallhead text-center">
+    {% assign linked = false %}
+    {% for member in site.categories.members %}
+      {% if post.author == member.title %}
+        {% capture mem_url %}{{ member.url }}{% endcapture %}
+        {% assign linked = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% if linked %}
+    <a class="off" href="{{ mem_url }}">{{ post.author }}</a>
+    {% else %}
+      {{ post.author }}
+    {% endif %}
+  </div>
+  <div class="bigspacer"></div>
+</div>
+  {% cycle 'close rows': nil, nil, '</div>' %}
+{% endfor %}
+{% cycle 'close rows': nil, '</div>', '</div>' %}
+
+</div>
