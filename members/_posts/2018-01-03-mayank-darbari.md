@@ -2,7 +2,8 @@
 layout: member
 title: Mayank Darbari
 position: VP Careers & Networking
-board: true
+board: false
+alumni: true
 degree: MSE CIS 2018
 email: mdarbari at seas.upenn.edu
 image: /images/members/mayank-darbari.jpeg

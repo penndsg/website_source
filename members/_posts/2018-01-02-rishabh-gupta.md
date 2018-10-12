@@ -2,7 +2,8 @@
 layout: member
 title: Rishabh Gupta
 position: VP Marketing
-board: true
+board: false
+alumni: true
 degree: MSE Data Science 2018
 email: rgupt at seas.upenn.edu
 image: /images/members/rishabh-gupta.jpg
