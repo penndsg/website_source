@@ -7,13 +7,13 @@ categories:
 
 <div class="container">
 
-  <div class="col-xs-12 text-center">
+  <div class="text-center">
     <h1>Blog Posts</h1>
     <hr/>
   </div>
 
 {% for post in site.categories.blog %}
-  {% cycle 'add rows': '<div class="row">', nil, nil %}
+  {% cycle 'add rows': '<div class="row">', '', '' %}
 <div class="col-sm-4 text-center">
   <h3><a class="off" href="{{ post.url }}">{{ post.title }}</a></h3>
   <div class="smallspacer"></div>
@@ -39,8 +39,8 @@ categories:
   </div>
   <div class="bigspacer"></div>
 </div>
-  {% cycle 'close rows': nil, nil, '</div>' %}
+  {% cycle 'close rows': '', '', '</div>' %}
 {% endfor %}
-{% cycle 'close rows': nil, '</div>', '</div>' %}
+{% cycle 'close rows': '', '</div>', '</div>' %}
 
 </div>
