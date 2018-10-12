@@ -17,8 +17,7 @@ industry from data professionals working at Dow Chemical, Solvay, and Air Liquid
 - **Jean-Yves Delannoy** -- PhD in Physics from Ecole normale supérieure de
   Lyon, currently the Manager of the Statistical Modeling and ARtificial
   intelligence (SMART) Team at [Solvay](https://www.solvay.com/).
-- **Ian Moskowitz** -- PhD in Chemical Engineering from UPenn, currently a data
-  scientist at [Air Liquide](https://www.airliquide.com/).
+- **Ian Moskowitz** -- UPenn alumnus, PhD in Chemical Engineering from UPenn, currently a Data Scientist in Research and Development at [Air Liquide](https://www.airliquide.com/).
 
 ### Agenda:
 
