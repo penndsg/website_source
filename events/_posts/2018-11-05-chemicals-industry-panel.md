@@ -26,7 +26,7 @@ industry from data professionals working at Dow Chemical, Solvay, and Air Liquid
 
 6:45 - 7:30 PM -- Q&A session and panel discussion
 
-7:30 - 8:00 PM -- Refreshments and Networking outside auditorium
+7:30 - 8:00 PM -- Refreshments and networking outside auditorium
 
 ### Directions:
 
