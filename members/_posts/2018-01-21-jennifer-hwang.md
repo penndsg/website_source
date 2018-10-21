@@ -4,6 +4,7 @@ title: Hyun (Jennifer) Hwang
 position: Co-Founder
 board: false
 founder: true
+alumni: true
 degree: PhD CBE 2017
 email: contact at jennhwang.me 
 website: jennhwang.me

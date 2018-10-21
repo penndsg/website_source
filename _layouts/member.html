@@ -34,30 +34,26 @@ layout: default
         {{ content }}
       </div>
 
-      {% for publication in site.categories.publications %}
-        {% for author in publication.authors %}
-          {% if author == member.title %}
-            {% assign papersq = true %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
-        {% if papersq %}
+      {% for post in site.categories.blog %}
+        {% if post.author == member.title %}
+          {% assign has_posts = true %}
+          {% break %}
+        {% endif %}
+        {% if has_posts %}
           {% break %}
         {% endif %}
       {% endfor %}
 
-      {% if papersq == true %}
+      {% if has_posts == true %}
 
       <div class="bigspacer"></div>
-      <h3>Publications</h3>
+      <h3>Blog Posts</h3>
       <div class="spacer"></div>
 
-        {% for publication in site.categories.publications %}
-          {% for author in publication.authors %}
-            {% if author == member.title %}
-      <p><a href="{{ publication.url }}" class="off">{{ publication.title }}</a>
-            {% endif %}
-          {% endfor %}
+        {% for post in site.categories.blog %}
+          {% if post.author == member.title %}
+      <p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
+          {% endif %}
         {% endfor %}
       {% endif %}
 

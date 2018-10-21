@@ -22,6 +22,32 @@ layout: default
       <img class="offset" src="{{ page.image }}">
       {% endif %}
       {% endif %}
+      {% assign linked = false %}
+      {% for member in site.categories.members %}
+        {% if page.author == member.title %}
+          {% capture mem_url %}{{ member.url }}{% endcapture %}
+          {% capture mem_image %}{{ member.image }}{% endcapture %}
+          {% assign linked = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      <div class="row">
+        {% if linked %}
+        <div class="col-md-12 text-center" >
+          <a class="off" href="{{ mem_url }}">
+            <img src="{{ mem_image }}" class="img-thumbnail" style="width: 150px;">
+          </a>
+        </div>
+        {% endif %}
+        <div class="col-md-12 text-center">
+          {% if linked %}<a class="off" href="{{ mem_url }}">{% endif %}
+            <h4>{{ page.author }}</h4>
+          {% if linked %}</a>{% endif %}
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+
       <div class="post">
         {{ content }}
       </div>
