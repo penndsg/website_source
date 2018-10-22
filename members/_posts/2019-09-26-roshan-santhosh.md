@@ -2,6 +2,7 @@
 layout: member
 title: Roshan Santhosh
 position: VP Education
+contributor: true
 board: true
 degree: MS in Data Science
 email: roshansk@seas.upenn.edu
