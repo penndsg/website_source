@@ -5,7 +5,6 @@ title: Levani Zandarashvili
 degree: Postdoctoral Fellow
 email: levaniz at mail.med.upenn.edu
 image: /images/members/levani-zandarashvili.jpg
-associate_board: false
 board: true
 ---
 

@@ -6,7 +6,6 @@ degree: MSE MEAM 2019
 email: zhangns at seas.upenn.edu
 linkedin: ningshan-zhang
 image: /images/members/ningshan-zhang.jpg
-associate_board: false
 board: true
 ---
 
