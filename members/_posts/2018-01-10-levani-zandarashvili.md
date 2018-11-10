@@ -1,6 +1,6 @@
 ---
 layout: member
-position: Data Projects Associate
+position: VP of Kaggle Team
 title: Levani Zandarashvili
 degree: Postdoctoral Fellow
 email: levaniz at mail.med.upenn.edu

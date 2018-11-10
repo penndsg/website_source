@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Ningshan Zhang
-position: Finance Associate
+position: VP of Education
 degree: MSE MEAM 2019
 email: zhangns at seas.upenn.edu
 linkedin: ningshan-zhang

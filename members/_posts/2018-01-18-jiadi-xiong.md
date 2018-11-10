@@ -5,7 +5,7 @@ position: Events Associate
 degree: MSE Data Science 2019
 email: jiadix at seas.upenn.edu
 image: /images/members/jiadi-xiong.jpg
-associate_board: true
+associate_board: false
 linkedin: jiadix
 ---
 
