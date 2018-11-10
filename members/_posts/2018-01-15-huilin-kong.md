@@ -5,7 +5,7 @@ position: Careers and Networking Associate
 degree: M.S.Ed SMART 2018
 email: huilink at gse.upenn.edu
 image: /images/members/huilin-kong.jpg
-associate_board: true
+associate_board: false
 ---
 
 I am a graduate student pursuing my Master’s degree at Upenn. I am in the SMART(statistics, measurement, assessment, research
