@@ -1291,7 +1291,7 @@ for n in range(len(features)):
 ```
 
 
-![png](prediction_of_customer_revenue_files/prediction_of_customer_revenue_21_0.png)
+![png](images/blog/prediction_of_customer_revenue_21_0.png)
 
 
 As you can see, while there is some strong imbalance for some features (e.g. continent, country, etc.), there is a quite good variation in some other features (e.g. region, metro, city, etc.). Such variation is very useful when training models.
