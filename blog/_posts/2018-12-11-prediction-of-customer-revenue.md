@@ -4,7 +4,6 @@ title: "prediction of customer revenue"
 author:Levani Zandarashvili
 # image: /images/blog/prediction-of-customer-revenue.png
 ---
-
 ### Predict Future Sales
 This notebook is based on the data provided in the Kaggle competition "Google Analytics Customer Revenue Prediction".
 https://www.kaggle.com/c/ga-customer-revenue-prediction.
