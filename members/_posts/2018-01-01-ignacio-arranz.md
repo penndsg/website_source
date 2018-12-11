@@ -2,7 +2,7 @@
 layout: member
 title: Ignacio Arranz
 position: President
-board: true
+board: false
 degree: MSE Data Science 2019
 email: arranz at seas.upenn.edu
 linkedin: arranzignacio

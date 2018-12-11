@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Rachael Creager
-position: VP of Research
+position: Co-President
 board: true
 degree: PhD Physics 2020
 email: rcreager at sas.upenn.edu
