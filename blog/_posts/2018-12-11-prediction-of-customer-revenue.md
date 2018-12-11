@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "prediction of customer revenue"
-author:Levani Zandarashvili
-# image: /images/blog/prediction-of-customer-revenue.png
+author: Levani Zandarashvili
+
 ---
 
 ### Predict Future Sales
