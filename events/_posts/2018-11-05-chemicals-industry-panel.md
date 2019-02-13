@@ -1,7 +1,7 @@
 ---
 layout: event
 title: "Data Science in the Chemicals Industry"
-upcoming: true
+upcoming: false
 time: "6:30 - 8:00 PM"
 location: Berger Auditorium, Skirkanich Hall
 image: /images/events/chemicals-materials-panel-image.png
