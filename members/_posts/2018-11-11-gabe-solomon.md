@@ -2,7 +2,7 @@
 layout: member
 title: "Gabriel Solomon"
 degree: MS in Data Science '19
-board: true
+board: false
 position: VP of Marketing
 linkedin: gabriel-solomon-0b3986124
 image: /images/members/gabriel-solomon.jpg
