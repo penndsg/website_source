@@ -4,7 +4,7 @@ title: Samantha Klasfeld
 board: true
 position: VP of Kaggle Team 
 degree: PhD Genomics and Computational Biology 
-image: /images/members/samantha-klasfeld.png
+image: /images/members/samantha_klasfeld.png 
 # cv: /pdfs/members/samantha-klasfeld-cv.pdf
 # resume: /pdfs/members/samantha-klasfeld-resume.pdf
 # twitter: your_twitter_handle
