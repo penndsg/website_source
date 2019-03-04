@@ -4,7 +4,7 @@ ruby '2.5.1'
 gem 'bundler'
 
 # jekyll
-gem 'jekyll', '3.8'
+gem 'jekyll', '3.8.4'
 gem 'kramdown'
 
 # compiling less
